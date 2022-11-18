@@ -136,13 +136,61 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\app.hpp" />
+    <ClInclude Include="src\ve_device.hpp" />
+    <ClInclude Include="src\ve_pipeline.hpp" />
     <ClInclude Include="src\ve_window.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\app.cpp" />
-    <ClCompile Include="src\shaders\simple_shader.vert" />
+    <ClCompile Include="src\ve_device.cpp" />
+    <ClCompile Include="src\ve_pipeline.cpp" />
     <ClCompile Include="src\ve_window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libraries\GLFW\glfw3.dll" />
+    <None Include="src\compile.bat" />
+    <None Include="src\shaders\simple_shader.frag" />
+    <None Include="src\shaders\simple_shader.vert" />
+    <None Include="src\shaders\simple_shader_frag.spv" />
+    <None Include="src\shaders\simple_shader_vert.spv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libraries\GLFW\glfw3.lib" />
+    <Library Include="libraries\GLFW\glfw3dll.lib" />
+    <Library Include="libraries\GLFW\glfw3_mt.lib" />
+    <Library Include="libraries\Vulkan\dxcompiler.lib" />
+    <Library Include="libraries\Vulkan\GenericCodeGen.lib" />
+    <Library Include="libraries\Vulkan\glslang-default-resource-limits.lib" />
+    <Library Include="libraries\Vulkan\glslang.lib" />
+    <Library Include="libraries\Vulkan\HLSL.lib" />
+    <Library Include="libraries\Vulkan\MachineIndependent.lib" />
+    <Library Include="libraries\Vulkan\OGLCompiler.lib" />
+    <Library Include="libraries\Vulkan\OSDependent.lib" />
+    <Library Include="libraries\Vulkan\shaderc.lib" />
+    <Library Include="libraries\Vulkan\shaderc_combined.lib" />
+    <Library Include="libraries\Vulkan\shaderc_shared.lib" />
+    <Library Include="libraries\Vulkan\shaderc_util.lib" />
+    <Library Include="libraries\Vulkan\spirv-cross-c-shared.lib" />
+    <Library Include="libraries\Vulkan\spirv-cross-c.lib" />
+    <Library Include="libraries\Vulkan\spirv-cross-core.lib" />
+    <Library Include="libraries\Vulkan\spirv-cross-cpp.lib" />
+    <Library Include="libraries\Vulkan\spirv-cross-glsl.lib" />
+    <Library Include="libraries\Vulkan\spirv-cross-hlsl.lib" />
+    <Library Include="libraries\Vulkan\spirv-cross-msl.lib" />
+    <Library Include="libraries\Vulkan\spirv-cross-reflect.lib" />
+    <Library Include="libraries\Vulkan\spirv-cross-util.lib" />
+    <Library Include="libraries\Vulkan\SPIRV-Tools-diff.lib" />
+    <Library Include="libraries\Vulkan\SPIRV-Tools-link.lib" />
+    <Library Include="libraries\Vulkan\SPIRV-Tools-lint.lib" />
+    <Library Include="libraries\Vulkan\SPIRV-Tools-opt.lib" />
+    <Library Include="libraries\Vulkan\SPIRV-Tools-reduce.lib" />
+    <Library Include="libraries\Vulkan\SPIRV-Tools-shared.lib" />
+    <Library Include="libraries\Vulkan\SPIRV-Tools.lib" />
+    <Library Include="libraries\Vulkan\SPIRV.lib" />
+    <Library Include="libraries\Vulkan\SPVRemapper.lib" />
+    <Library Include="libraries\Vulkan\VkLayer_utils.lib" />
+    <Library Include="libraries\Vulkan\vulkan-1.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

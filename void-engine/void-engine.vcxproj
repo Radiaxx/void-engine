@@ -136,6 +136,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\app.hpp" />
+    <ClInclude Include="src\ve_model.hpp" />
     <ClInclude Include="src\ve_swap_chain.hpp" />
     <ClInclude Include="src\ve_device.hpp" />
     <ClInclude Include="src\ve_pipeline.hpp" />
@@ -144,17 +145,17 @@
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\app.cpp" />
+    <ClCompile Include="src\ve_model.cpp" />
     <ClCompile Include="src\ve_swap_chain.cpp" />
     <ClCompile Include="src\ve_device.cpp" />
     <ClCompile Include="src\ve_pipeline.cpp" />
     <ClCompile Include="src\ve_window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="src\.env" />
     <None Include="src\compile.bat" />
     <None Include="src\shaders\simple_shader.frag" />
     <None Include="src\shaders\simple_shader.vert" />
-    <None Include="src\shaders\simple_shader_frag.spv" />
-    <None Include="src\shaders\simple_shader_vert.spv" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="libraries\GLFW\glfw3.lib" />

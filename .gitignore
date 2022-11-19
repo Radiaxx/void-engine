@@ -9,6 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.env
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -361,3 +362,38 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/void-engine/src/.env
+/void-engine/libraries/Vulkan/VkLayer_utils.lib
+/void-engine/libraries/Vulkan/SPVRemapper.lib
+/void-engine/libraries/Vulkan/SPIRV.lib
+/void-engine/libraries/Vulkan/SPIRV-Tools.lib
+/void-engine/libraries/Vulkan/SPIRV-Tools-shared.lib
+/void-engine/libraries/Vulkan/SPIRV-Tools-reduce.lib
+/void-engine/libraries/Vulkan/SPIRV-Tools-opt.lib
+/void-engine/libraries/Vulkan/SPIRV-Tools-lint.lib
+/void-engine/libraries/Vulkan/SPIRV-Tools-link.lib
+/void-engine/libraries/Vulkan/SPIRV-Tools-diff.lib
+/void-engine/libraries/Vulkan/spirv-cross-util.lib
+/void-engine/libraries/Vulkan/spirv-cross-reflect.lib
+/void-engine/libraries/Vulkan/spirv-cross-msl.lib
+/void-engine/libraries/Vulkan/spirv-cross-hlsl.lib
+/void-engine/libraries/Vulkan/spirv-cross-glsl.lib
+/void-engine/libraries/Vulkan/spirv-cross-cpp.lib
+/void-engine/libraries/Vulkan/spirv-cross-core.lib
+/void-engine/libraries/Vulkan/spirv-cross-c.lib
+/void-engine/libraries/Vulkan/spirv-cross-c-shared.lib
+/void-engine/libraries/Vulkan/shaderc_util.lib
+/void-engine/libraries/Vulkan/shaderc_shared.lib
+/void-engine/libraries/Vulkan/shaderc_combined.lib
+/void-engine/libraries/Vulkan/shaderc.lib
+/void-engine/libraries/Vulkan/OSDependent.lib
+/void-engine/libraries/Vulkan/OGLCompiler.lib
+/void-engine/libraries/Vulkan/MachineIndependent.lib
+/void-engine/libraries/Vulkan/HLSL.lib
+/void-engine/libraries/Vulkan/glslang.lib
+/void-engine/libraries/Vulkan/glslang-default-resource-limits.lib
+/void-engine/libraries/Vulkan/GenericCodeGen.lib
+/void-engine/libraries/Vulkan/dxcompiler.lib
+/void-engine/libraries/GLFW/glfw3_mt.lib
+/void-engine/libraries/GLFW/glfw3dll.lib
+/void-engine/libraries/GLFW/glfw3.dll

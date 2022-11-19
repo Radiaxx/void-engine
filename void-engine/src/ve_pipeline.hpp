@@ -8,7 +8,18 @@
 
 namespace ve {
 
-	struct PipelineConfigInfo {};
+	struct PipelineConfigInfo {
+		VkViewport viewport;
+		VkRect2D scissor;
+		VkPipelineInputAssemblyStateCreateInfo inputAssemblyInfo;
+		VkPipelineRasterizationStateCreateInfo rasterizationInfo;
+		VkPipelineMultisampleStateCreateInfo multisampleInfo;
+		VkPipelineColorBlendAttachmentState colorBlendAttachment;
+		VkPipelineDepthStencilStateCreateInfo depthStencilInfo;
+		VkPipelineLayout pipelineLayout = nullptr;
+		VkRenderPass renderPass = nullptr;
+		uint32_t subpass = 0;
+	};
 
 	class VePipeline {
 	public:
@@ -18,11 +29,12 @@ namespace ve {
 			const std::string& fragFilepath, 
 			const PipelineConfigInfo& configInfo);
 
-		~VePipeline() {}
+		~VePipeline();
 
 		VePipeline(const VePipeline&) = delete;
 		void operator = (const VePipeline&) = delete;
 
+		void bind(VkCommandBuffer commandBuffer);
 		static PipelineConfigInfo defaultPipelineConfigInfo(uint32_t width, uint32_t heigth);
 
 	private:

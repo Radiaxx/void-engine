@@ -138,6 +138,8 @@
     <ClInclude Include="src\app.hpp" />
     <ClInclude Include="src\ve_game_object.hpp" />
     <ClInclude Include="src\ve_model.hpp" />
+    <ClInclude Include="src\ve_renderer.hpp" />
+    <ClInclude Include="src\ve_render_system.hpp" />
     <ClInclude Include="src\ve_swap_chain.hpp" />
     <ClInclude Include="src\ve_device.hpp" />
     <ClInclude Include="src\ve_pipeline.hpp" />
@@ -147,6 +149,8 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\app.cpp" />
     <ClCompile Include="src\ve_model.cpp" />
+    <ClCompile Include="src\ve_renderer.cpp" />
+    <ClCompile Include="src\ve_render_system.cpp" />
     <ClCompile Include="src\ve_swap_chain.cpp" />
     <ClCompile Include="src\ve_device.cpp" />
     <ClCompile Include="src\ve_pipeline.cpp" />

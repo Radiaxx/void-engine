@@ -2,8 +2,7 @@
 
 #include "ve_window.hpp"
 #include "ve_device.hpp"
-#include "ve_pipeline.hpp"
-#include "ve_swap_chain.hpp"
+#include "ve_renderer.hpp"
 #include "ve_game_object.hpp"
 
 // std
@@ -26,21 +25,11 @@ namespace ve {
 
 	private:
 		void loadGameObjects();
-		void createPipelineLayout();
-		void createPipeline();
-		void createCommandBuffers();
-		void freeCommandBuffers();
-		void drawFrame();
-		void recreateSwapChain();
-		void recordCommandBuffer(int imageIndex);
-		void renderGameObjects(VkCommandBuffer commandBuffer);
 
 		VeWindow veWindow{WIDTH, HEIGTH, "Hello Vulkan!"};
 		VeDevice veDevice{ veWindow };
-		std::unique_ptr<VeSwapChain> veSwapChain;
-		std::unique_ptr<VePipeline> vePipeline;
-		VkPipelineLayout pipelineLayout;
-		std::vector<VkCommandBuffer> commandBuffers;	
+		VeRenderer veRenderer{ veWindow, veDevice };
+
 		std::vector<VeGameObject> gameObjects;
 
 		std::string vertFilepath = "C:/Users/danie/OneDrive/Documenti/Visual Studio 2022/Projects/void-engine/void-engine/src/shaders/simple_shader.vert.spv";
